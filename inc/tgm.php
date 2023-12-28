@@ -94,11 +94,11 @@ function customtd_register_required_plugins()
 			'source' => get_theme_file_path() . '/plugins/js_composer.zip',
 			'required' => false,
 		),
-		array(
-			'name' => 'CPT',
-			'slug' => 'custom-post-type-ui',
-			'required' => false,
-		),
+		// array(
+		// 	'name' => 'CPT',
+		// 	'slug' => 'custom-post-type-ui',
+		// 	'required' => false,
+		// ),
 		array(
 			'name' => 'Disable gutenberg',
 			'slug' => 'disable-gutenberg',
