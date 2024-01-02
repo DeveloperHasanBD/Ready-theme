@@ -28,3 +28,7 @@ WP Bootstrap Navwalker by Edward McIntyre & William Patton: https://github.com/t
 Do not modify the parent redapple theme. Instead, download a copy of the redapple Child starter theme and do all your development within the child theme.
 Full developer documentation: https://docs.redapple.com
 */
+
+.vc_row.wpb_row.vc_row-fluid {
+    margin: 0;
+}
