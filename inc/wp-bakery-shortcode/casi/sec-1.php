@@ -1,99 +1,46 @@
 <?php
-
-
-
-add_action('vc_before_init', 'octgn_casi_sec2_backend');
-
-
-
-function octgn_casi_sec2_backend()
-
+add_action('vc_before_init', 'redp_contact_sec_1_backend');
+function redp_contact_sec_1_backend()
 {
-
     vc_map(
-
         array(
-
-            "name" => __("Casi logos", "octagona"), // Element name
-
-            "base" => "octgn_casi_sec2", // Element shortcode
-
+            "name" => __("Contact info", "redapple"), // Element name
+            "base" => "redp_contact_sec_1", // Element shortcode
             'icon' => get_template_directory_uri() . '/octgn-assets/images/vc-icon.png',
-
-            'description' => 'Dedicated for Octagona',
-
-            "class" => "octagona-cstm",
-
-            "category" => __('OCT Casi', 'octagona'),
-
+            'description' => 'Dedicated for redapple',
+            "class" => "redapple-cstm",
+            "category" => __('OCT Casi', 'redapple'),
             'params' => array(
-
                 array(
-
                     "type" => "textfield",
-
                     "holder" => "div",
-
                     "class" => "",
-
-                    "heading" => __("Title ", "octagona"),
-
+                    "heading" => __("Title ", "redapple"),
                     "param_name" => "octgn_casi_s2_title",
-
-                    "value" => __("", "octagona"),
-
+                    "value" => __("", "redapple"),
                 ),
-
-                // array(
-
-                //     "type" => "attach_images",
-
-                //     "holder" => "div",
-
-                //     "class" => "",
-
-                //     "heading" => __("Description", "octagona"),
-
-                //     "param_name" => "octgn_casi_s2_logos",
-
-                //     "value" => __("", "octagona"),
-
-                // ),
-
             )
-
         )
-
     );
-
 }
 
 
+add_shortcode('redp_contact_sec_1', 'redp_contact_sec_1_view');
 
-
-
-add_shortcode('octgn_casi_sec2', 'octgn_casi_sec2_view');
-
-
-
-function octgn_casi_sec2_view($atts)
+function redp_contact_sec_1_view($atts)
 
 {
 
     ob_start();
-
     $atts = shortcode_atts(array(
 
         'octgn_casi_s2_title' => '',
 
-        // 'octgn_casi_s2_logos' => '',
-
-    ), $atts, 'octgn_casi_sec2');
+    ), $atts, 'redp_contact_sec_1');
 
 
 
     $octgn_casi_s2_title = $atts['octgn_casi_s2_title'] ?? '';
-
     // $octgn_casi_s2_logo_ids = $atts['octgn_casi_s2_logos'] ?? '';
 
     // $octgn_casi_s2_logo_ids_url = wp_get_attachment_image_url($octgn_casi_s2_logo_ids);
@@ -109,85 +56,6 @@ function octgn_casi_sec2_view($atts)
 
 
 ?>
-
-
-
-    <!-- end r_cs_client_section  -->
-
-    <div class="r_cs_client_section">
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-12">
-
-                    <h3 class="r_cs_client_title"><?php echo $octgn_casi_s2_title; ?></h3>
-
-                    <div class="r_cs_client_logo_section">
-
-                        <ul>
-
-
-
-                            <?php
-
-
-
-                            $logo_query = new WP_Query([
-
-                                'post_type' => 'octgn-logo',
-
-                                'order' => 'DESC',
-
-                                'posts_per_page'=>-1
-
-                            ]);
-
-                            while ($logo_query->have_posts()) {
-
-                                $logo_query->the_post();
-
-                            ?>
-
-                                <li><img src="<?php the_post_thumbnail_url(); ?>" alt=""></li>
-
-                            <?php
-
-                            }
-
-                            wp_reset_query();
-
-                            ?>
-
-
-
-
-
-                            <?php
-
-                            // for ($i = 0; $i < $logo_id_count; $i++) {
-
-                            //     $octgn_casi_s2_logo_ids_url = wp_get_attachment_image_url($all_logo_ids[$i]);
-
-
-
-                            // }
-
-                            ?>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
 
 
 <?php
