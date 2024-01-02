@@ -38,6 +38,7 @@ $understrap_includes = array(
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
 	'/tgm.php',                      	// Load deprecated functions.
+	'/wp-bakery-shortcode',             // Load deprecated functions.
 // 	'/acf-gutenberg-blocks.php',            // Load deprecated functions.
 //      '/elementor-shortcode.php',             // Load deprecated functions.
 	
