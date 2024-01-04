@@ -71,3 +71,15 @@ function header_class_setup($class)
 }
 add_filter('class_change_as_page', 'header_class_setup');
 
+
+function wp_bakery_dropdown_css()
+{
+?>
+	<style>
+		.wpb-input.wpb-select.dropdown.yes {
+			max-width: 100%;
+		}
+	</style>
+<?php
+}
+add_action('admin_enqueue_scripts', 'wp_bakery_dropdown_css');
