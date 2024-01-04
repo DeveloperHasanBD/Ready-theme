@@ -12,6 +12,11 @@ function redp_home_sec_1_backend()
             "class"         => "redapple-cstm",
             "category"      => __('Home', 'redapple'),
             "params"        => array(
+                // array(
+                //     "type"          => "vc_link",
+                //     "heading"       => "URL",
+                //     "param_name"    => "ptk_s2_url",
+                // ),
                 array(
                     "type"          => "param_group",
                     "heading"       => "Home main slider",
@@ -78,9 +83,11 @@ function redp_home_sec_1_view($atts)
     ob_start();
     $atts = shortcode_atts(array(
         'home_main_slider'     => '',
+        // 'ptk_s2_url'        => '',
     ), $atts, 'redp_home_sec_1');
 
     $slide_items = vc_param_group_parse_atts($atts['home_main_slider']);
+    // $ptk_s2_url     = vc_build_link($atts['ptk_s2_url']) ?? '';
 ?>
     <!-- home slider start from here  -->
     <section class="home-slider-main">
