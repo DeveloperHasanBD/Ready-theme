@@ -43,9 +43,10 @@ if (!function_exists('understrap_scripts')) {
         wp_enqueue_script('enq-isotope', get_template_directory_uri() . '/assets/js/isotope.pkgd.js', array(), $theme_version, true);
 
         wp_enqueue_script('enq-main', get_template_directory_uri() . '/assets/js/h-main.js', array(), $theme_version, true);
+        wp_enqueue_script('enq-ajax-data', get_template_directory_uri() . '/assets/js/ajax-data.js', array(), $theme_version, true);
 
 
-        wp_localize_script('enq-main', 'action_url_ajax', [
+        wp_localize_script('enq-ajax-data', 'action_url_ajax', [
             'ajax_url' => admin_url('admin-ajax.php'),
         ]);
 
