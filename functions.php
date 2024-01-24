@@ -5,9 +5,8 @@ include_once("inc/acf-code/acf-code.php");
 include_once("inc/db-table/db-table.php");
 include_once("inc/mail-send/mail-sending.php");
 include_once("inc/woo/hook.php");
+include_once("inc/ajax/ajax-data.php");
 
-// include_once("inc/nel-mondo/country-search.php");
-// include_once("inc/woo/woo-ajax/product-filter.php");
 
 /**
  * redapple functions and definitions
