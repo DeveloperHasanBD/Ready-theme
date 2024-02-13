@@ -3,7 +3,7 @@
 (function ($) {
     $(document).ready(function () {
 
-
+         // var url = action_url_ajax.ajax_url;
         // $("body").delegate('.term_filter_class_input', 'click', function (e) {
 
         //     const spinner = `<div class="text-center" style="height:150px">
