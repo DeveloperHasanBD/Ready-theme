@@ -88,6 +88,7 @@ function redp_home_sec_1_view($atts)
 
     $slide_items = vc_param_group_parse_atts($atts['home_main_slider']);
     // $ptk_s2_url     = vc_build_link($atts['ptk_s2_url']) ?? '';
+    // $sec3_cont_iframe_map       = rawurldecode(base64_decode($atts['sec3_cont_iframe_map']));
 ?>
     <!-- home slider start from here  -->
     <section class="home-slider-main">
