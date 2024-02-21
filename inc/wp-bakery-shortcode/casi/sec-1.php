@@ -18,6 +18,11 @@ function redp_home_sec_1_backend()
                 //     "param_name"    => "ptk_s2_url",
                 // ),
                 array(
+                    "type"          => "textarea_raw_html",
+                    "heading"       => "Map",
+                    "param_name"    => "sec3_cont_iframe_map",
+                ),
+                array(
                     "type"          => "param_group",
                     "heading"       => "Home main slider",
                     "param_name"    => "home_main_slider",
