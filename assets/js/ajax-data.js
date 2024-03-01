@@ -51,6 +51,57 @@
 
 
 
+
+ // nel mondo country search 
+    // $("#nl_mnd_country_search").on('keyup', function () {
+    //   var input_value = $("#nl_mnd_country_search").val();
+    //   var input_value_length = input_value.length;
+    //   if (input_value_length > 0) {
+    //     $.ajax({
+    //       url: url,
+    //       data: {
+    //         action: 'nel_mondo_country_search',
+    //         input_value: input_value,
+    //       },
+    //       type: 'post',
+    //       success: function (data) {
+    //         $(".crzf_country_list").html(data);
+    //       },
+    //     });
+    //   } else {
+    //     $.ajax({
+    //       url: url,
+    //       data: {
+    //         action: 'existing_nel_mondo_country_search',
+    //         input_value: input_value,
+    //       },
+    //       type: 'post',
+    //       success: function (data) {
+    //         $(".crzf_country_list").html(data);
+    //       },
+    //     });
+    //   }
+    // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        
+
+
     });
 
 })(jQuery)
