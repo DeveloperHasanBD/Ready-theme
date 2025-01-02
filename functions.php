@@ -88,7 +88,7 @@ function wp_bakery_dropdown_css()
 	            height: 120px;
 	        }
 		.accordion-section-title button.accordion-trigger {
-		    height: unset;
+		    height: unset !important;
 		}
 	</style>
 <?php
