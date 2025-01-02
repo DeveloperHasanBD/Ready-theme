@@ -7,7 +7,7 @@ function redp_home_sec_1_backend()
         array(
             "name"          => __("Home main Slider", "redapple"), // Element name
             "base"          => "redp_home_sec_1", // Element shortcode
-            'icon'          => get_template_directory_uri() . '/assets/images/logo-dark.png',
+            'icon'          => get_template_directory_uri() . '/assets/images/vc-logo.png',
             'description'   => 'Dedicated for redapple',
             "class"         => "redapple-cstm",
             "category"      => __('Home', 'redapple'),
