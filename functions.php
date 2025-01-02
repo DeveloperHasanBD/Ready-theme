@@ -87,7 +87,9 @@ function wp_bakery_dropdown_css()
 	            font-size: 16px !important; 
 	            height: 120px;
 	        }
-		
+		.accordion-section-title button.accordion-trigger {
+		    height: unset;
+		}
 	</style>
 <?php
 }
