@@ -7,7 +7,7 @@ include_once("inc/db-table.php");
 include_once("inc/mail-sending.php");
 include_once("inc/woo-hook.php");
 include_once("inc/admin-menu.php");
-// include_once("inc/acf-blocks-builder.php");
+include_once("inc/acf-blocks-builder.php");
 
 
 
@@ -40,7 +40,7 @@ $understrap_includes = array(
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
 	'/tgm.php',                      	// Load deprecated functions.
-	'/wp-bakery-shortcode.php',             // Load deprecated functions.
+//      '/wp-bakery-shortcode.php',             // Load deprecated functions.
 // 	'/gutenberg-blocks.php',            // Load deprecated functions.
 //      '/elementor-shortcode.php',             // Load deprecated functions.
 	
