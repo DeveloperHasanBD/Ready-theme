@@ -63,6 +63,7 @@
     //         action: 'nel_mondo_country_search',
     //         input_value: input_value,
     //       },
+    //       dataType: "json",
     //       type: 'post',
     //       success: function (data) {
     //         $(".crzf_country_list").html(data);
@@ -75,6 +76,7 @@
     //         action: 'existing_nel_mondo_country_search',
     //         input_value: input_value,
     //       },
+    //       dataType: "json",
     //       type: 'post',
     //       success: function (data) {
     //         $(".crzf_country_list").html(data);
