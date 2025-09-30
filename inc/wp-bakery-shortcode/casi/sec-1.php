@@ -12,6 +12,13 @@ function redp_home_sec_1_backend()
             "class"         => "redapple-cstm",
             "category"      => __('Home', 'redapple'),
             "params"        => array(
+                 array(
+                    "type"       => "textarea_html",
+                    "heading"    => __("Text editor", "octagona"),
+                    "param_name" => "content",
+                    "value"      => "",
+                    "admin_label" => true,
+                ),
                 // array(
                 //     "type"          => "vc_link",
                 //     "heading"       => "URL",
@@ -91,6 +98,7 @@ function redp_home_sec_1_view($atts)
         // 'ptk_s2_url'        => '',
     ), $atts, 'redp_home_sec_1');
 
+    $text_editor = wpb_js_remove_wpautop($content, true);
     $slide_items = vc_param_group_parse_atts($atts['home_main_slider']);
     // $ptk_s2_url     = vc_build_link($atts['ptk_s2_url']) ?? '';
     // $sec3_cont_iframe_map       = rawurldecode(base64_decode($atts['sec3_cont_iframe_map']));
