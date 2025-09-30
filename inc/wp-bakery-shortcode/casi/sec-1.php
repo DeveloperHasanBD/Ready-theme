@@ -89,7 +89,7 @@ function redp_home_sec_1_backend()
 
 add_shortcode('redp_home_sec_1', 'redp_home_sec_1_view');
 
-function redp_home_sec_1_view($atts)
+function redp_home_sec_1_view($atts, $content = null)
 
 {
     ob_start();
