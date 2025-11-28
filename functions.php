@@ -8,6 +8,8 @@ include_once("inc/mail-sending.php");
 include_once("inc/woo-hook.php");
 include_once("inc/admin-menu.php");
 include_once("inc/acf-blocks-builder.php");
+include_once("inc/user-extra-func.php");
+
 
 
 
