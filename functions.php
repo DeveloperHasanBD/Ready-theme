@@ -96,3 +96,12 @@ function wp_bakery_dropdown_css()
 <?php
 }
 add_action('admin_enqueue_scripts', 'wp_bakery_dropdown_css');
+
+function allow_svg_upload_for_admins( $mimes ) {
+    if ( current_user_can( 'manage_options' ) ) {
+        $mimes['svg']  = 'image/svg+xml';
+        $mimes['svgz'] = 'image/svg+xml';
+    }
+    return $mimes;
+}
+add_filter( 'upload_mimes', 'allow_svg_upload_for_admins' );
