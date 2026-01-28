@@ -62,48 +62,48 @@ function customtd_register_required_plugins()
 	$plugins = array(
 
 		// This is an example of how to include a plugin bundled with a theme.
-		array(
-			'name' => 'Ivory Search',
-			'slug' => 'add-search-to-menu',
-			'required' => false,
-		),
+		// array(
+		// 	'name' => 'Ivory Search',
+		// 	'slug' => 'add-search-to-menu',
+		// 	'required' => false,
+		// ),
 		array(
 			'name' => 'CF7',
 			'slug' => 'contact-form-7',
 			'required' => false,
 		),
-		array(
-			'name' => 'Social share',
-			'slug' => 'sassy-social-share',
-			'required' => false,
-		),
-		array(
-			'name' => 'Breadcrumb',
-			'slug' => 'breadcrumb-navxt',
-			'required' => false,
-		),
+		// array(
+		// 	'name' => 'Social share',
+		// 	'slug' => 'sassy-social-share',
+		// 	'required' => false,
+		// ),
+		// array(
+		// 	'name' => 'Breadcrumb',
+		// 	'slug' => 'breadcrumb-navxt',
+		// 	'required' => false,
+		// ),
 		array(
 			'name' => 'ACF Pro',
 			'slug' => 'advanced-custom-fields-pro',
 			'source' => get_theme_file_path() . '/plugins/advanced-custom-fields-pro.zip',
 			'required' => false,
 		),
-		array(
-			'name' => 'WP Bakery Page Builder',
-			'slug' => 'js_composer',
-			'source' => get_theme_file_path() . '/plugins/js_composer.zip',
-			'required' => false,
-		),
+		// array(
+		// 	'name' => 'WP Bakery Page Builder',
+		// 	'slug' => 'js_composer',
+		// 	'source' => get_theme_file_path() . '/plugins/js_composer.zip',
+		// 	'required' => false,
+		// ),
 		// array(
 		// 	'name' => 'CPT',
 		// 	'slug' => 'custom-post-type-ui',
 		// 	'required' => false,
 		// ),
-		array(
-			'name' => 'Disable gutenberg',
-			'slug' => 'disable-gutenberg',
-			'required' => false,
-		),
+		// array(
+		// 	'name' => 'Disable gutenberg',
+		// 	'slug' => 'disable-gutenberg',
+		// 	'required' => false,
+		// ),
 
 
 	);
